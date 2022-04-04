@@ -1,5 +1,5 @@
 releases:
   - name: {{ requiredEnv "RELEASE_NAME" }}
-    namespace: default
+    namespace: {{ requiredEnv "NAME" }}
     chart: ./foo
 
