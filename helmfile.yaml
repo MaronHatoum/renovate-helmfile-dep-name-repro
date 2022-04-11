@@ -1,7 +1,5 @@
 releases:
-{{ if .Values.nginx.intranet.enabled }}
-  - name: nginx-intranet
-    chart: ingress-nginx/ingress-nginx
-    version: 3.37.0
-{{ end }}
+  - name: {{ requiredEnv "RELEASE_NAME" }}
+    namespace: default
+    chart: ./foo
 
