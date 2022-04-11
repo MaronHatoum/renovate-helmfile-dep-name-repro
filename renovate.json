@@ -5,6 +5,7 @@
   "extends": [
     "github>whitesource/merge-confidence:beta",
     "default:semanticCommits",
-    "docker:enableMajor"
+    "docker:enableMajor",
+    ":disableRateLimiting"
   ]
 }
