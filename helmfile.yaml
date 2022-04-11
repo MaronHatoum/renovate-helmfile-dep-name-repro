@@ -1,5 +1,5 @@
 releases:
-  - name: "{{ requiredEnv \"RELEASE_NAME\" }}"
-    namespace: default
-    chart: ./foo
+  - name: nginx-intranet
+    chart: ingress-nginx/ingress-nginx
+    version: 3.37.0
 
